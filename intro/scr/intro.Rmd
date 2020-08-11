@@ -1,0 +1,54 @@
+---
+title: "Introduction"
+author: "Alfredo Cárdenas Rivera"
+date: "11/8/2020"
+output:
+  bookdown::html_document2: default
+  bookdown::pdf_document2: default
+version: 1.0
+---
+
+| **OBJETO**      |     **POBLACIÓN**    |     **MUESTRA**     |
+|:---------------:|:--------------------:|:-------------------:|
+| **Caracteristica medible**| Dato         |      Dato           |
+| **Conjunto de datos**     | Censo        |      Muestra        |
+| **Medición numérica de un dato** | Parámetro  | Estadístico   |
+| **Conjunto de datos**     | _N_            |     _n_     |
+| **Media**       | $\mu$    |   $\bar{x}$ |
+
+
+# GENERALIDADES
+La estadística es la ciencia que permite hacer inferencias de un fenómeno aleatorio a partir de muestras relativamente pequeñas. La estadística tiene dos áreas principales: la matemática estadística y la estadística aplicada. La matemática estadística se encarga de desarrollar nuevos métodos matemáticos de estadística inferencial. La estadística aplicada comprende la aplicación de estos métodos estadísticos en áreas específicas como la economía, la psicología o la salud pública. La bioestadística es una rama de la estadística aplicada que trata de aplicar los métodos estadísticos en la medicina y en problemas biológicos. La meta final de la estadística y por ende de la bioestadística es: aprender las características y rasgos de un grupo de datos a partir de una muestra pequeña de estos.
+Para ello es importante definir algunos términos importantes:
+
+
+1. Población que es el universo de todos los datos.
+2. Muestra que es un subgrupo de datos de la población
+3. Datos que son las observaciones recolestadas de la población o muestra.
+4. Parámetro que es una medición numérica que describe alguna característica de la población.
+5. Estadístico que es una medición numérica que describe alguna característica de la muestra.
+
+!["Población y muestra"](C:/Users/acard/CloudStation/R-project/bioestadistica_2020/figura/fig1_conjunto.png)
+
+Como se observa en la figura prervia, la obtención de una muestras a partir de la selección aleatoria de datos una población, nos muestra la misma tendencia de los datos que en la población, aunque necesariamente no son exactamente iguales.
+
+| **COLOR**   |   **POBLACIÓN**   |   **MUESTRA**   |
+|:-----------:|:-----------------:|:---------------:|
+|   **_Rojo_**    | $\frac{50}{100}$ (50.0%) | $\frac{6}{11}$ (54.5%)   |   
+|   **_Purpura_**   | $\frac{30}{100}$ (30.0%) | $\frac{3}{11}$ (27.3%)   |   
+|   **_Verde_**    | $\frac{20}{100}$ (20.0%) | $\frac{2}{11}$ (18.2%)   |   
+
+
+# Datos
+Los datos pueden ser agrupados en dos grandes grupos, los cualitativos y los cuantitativos. Los datos cualitativos describen una carácteristica de los datos y no una cantidad. Los datos cualitativos pueden ser de dos categorias: ordinales o nominales. Las nominales son aquellas que no pueden ser ordenadas, como por ejemplo los colores. Las cardniales u ordinales pueden ser ordenadas como por ejemplo: grande, mediano, chico. 
+Por otro lado, las datos cuantitativos describen una cantidad, un valor numérico para esa varaible. Estos pueden ser continuos o discontinuos. Los continuos son aquellos que aceptan fracciones entre un valor y otro, como por ejemplo la estatura: 1.85, 1.86, 1.855. Los discontinuos, tambien llamados discretos, no aceptan fracciones entre los valores enteros, como por ejemplo número de varones y mujeres en un salón.
+
+!["Población y muestra"](C:/Users/acard/CloudStation/R-project/bioestadistica_2020/figura/datos_tree.png)
+
+
+
+
+Para calcular la media esta la siguiente fórumla (ver \@ref(eq:mean)): 
+\begin{equation}
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n}x_{i} (\#eq:mean)
+\end{equation}
